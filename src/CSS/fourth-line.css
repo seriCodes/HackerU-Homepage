@@ -1,7 +1,7 @@
 .fourth-line{
     display: grid;
     grid-template-columns:  1fr;
-    border: blue solid 6px;
+    /* border: blue solid 6px; */
     grid-template-areas: 
     "courses-icon  "
     ;
@@ -24,7 +24,7 @@
         grid-template-columns: 3fr 1fr;
         grid-template-rows: auto 1fr;
 
-        border: red solid 6px;
+        /* border: red solid 6px; */
         grid-template-areas: 
         "courses-icon user-details"
         "HackerUinfoLinks HackerUinfoLinks"

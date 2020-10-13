@@ -7,6 +7,7 @@
         /* position: relative; */
     /* display: block;  */
     /* max-width: 100%; */
+    overflow-x: hidden;
 
  }
 
@@ -40,11 +41,15 @@ transform: translateX(-99px); */
         transform: translateX(-100%)
 
     }
-}  
+}
+.newsticker-container ul{
+/* overflow-x: hidden; */
+    /* width: 100vw; */
+    }
 
 /* disable horizontal screen*/
 html, body {
     max-width: 100%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 }

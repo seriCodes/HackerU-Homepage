@@ -112,7 +112,7 @@ margin: 13px 0px;
     .center-header{
         position: sticky;
         top:  0px;
-        left:0;
+        left:0px;
         display:flex;
   flex-direction: row;
   justify-content: space-between;

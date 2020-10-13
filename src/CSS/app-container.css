@@ -6,7 +6,7 @@
 }
 
 .app-NonGrid-container{
-border: blueviolet  solid 8px;
+/* border: blueviolet  solid 8px; */
 min-height: 1000px;
 }
 .app-container{
@@ -49,7 +49,7 @@ grid-template-areas:
         display: grid;
         grid-template-columns: minmax(0 , 1fr) [col-middle]  1030px  minmax(0 ,1fr) ;
 
-        grid-template-rows: [row-1-start] 1fr [row-1-end row-2-start] 5fr [row-2-end row-3-start]   auto auto auto;
+        grid-template-rows: [row-1-start] 0.5fr [row-1-end row-2-start] 5fr [row-2-end row-3-start]   auto auto auto;
         
     grid-template-areas: 
  

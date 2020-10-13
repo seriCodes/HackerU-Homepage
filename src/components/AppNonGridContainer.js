@@ -28,7 +28,7 @@ import    '../CSS/make-appointement.css';
 import    '../CSS/side-auto-moving-text.css';  
 
 
-//             <ModalCenter></ModalCenter>
+//             
     
 
 export const AppNonGridContainer = () => {
@@ -37,7 +37,8 @@ export const AppNonGridContainer = () => {
         <UpperHeader></UpperHeader>
         <CenterHeader></CenterHeader>
         <AppContainer></AppContainer>
-
+        <ModalCenter></ModalCenter>
+        
         </div>
     )
 }
