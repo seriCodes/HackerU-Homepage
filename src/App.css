@@ -1,7 +1,21 @@
 .App {
   text-align: center;
 }
+.displayNone{
+  display:none !important; 
+ }
+ /* body{
+  background-color : #373737 ;
 
+ }
+  */
+  .shadower_images_opened{
+    background-color : #373737 ;
+    opacity:1;
+}
+.shadower_images_closed{
+  opacity:0;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

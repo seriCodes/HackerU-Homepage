@@ -1,0 +1,14 @@
+.lower-header{
+    font-size: 2.5vw;
+}
+.lower-header span{
+    font-size: 3.5vw;
+}
+@media(min-width:1030px){
+    .lower-header{
+        font-size: 32px;
+    }
+    .lower-header span{
+        font-size: 46px ;
+    }
+}

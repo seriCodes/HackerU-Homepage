@@ -1,0 +1,167 @@
+.CenterHeader-container{
+    position: relative;
+    top: var(--upper-headerHeighet);
+   /* min-height:  inherit; */
+    border: red solid ;
+}
+ .center-header { 
+  
+  
+      z-index: 2;
+
+
+}
+.dropdown{
+    z-index: 1;
+}
+.center-header{
+    display: block;
+    background-color: white;
+
+    color: initial;
+   }
+
+   .center-header ul{
+list-style: none;
+   }
+
+   .center-header  ul li.first-li{
+       position: relative;
+       margin: 0px  5px;
+   }
+   .center-header ul li span:not(.no-arrow)::after {
+content:'	\25BC ';
+}
+.center-header ul li span:hover{
+    text-decoration: underline;
+    color: blue;
+    cursor : pointer;
+}
+
+.dropdown-header-center{
+    display: flex;
+    flex-direction: row;
+position: absolute;
+right: -10px;
+color:#aad6be;
+
+    background-color: var(--backgroundBlue-color);
+    border-radius: 5px;
+}
+.dropdown-header-center ul{
+padding: 2px 5px 2px 5px;
+text-align: right;
+font-size: 0.925rem;
+}
+
+.dropdown-header-center   #courses-col2 {
+    margin: 0px 45px;
+     }
+    
+
+.dropdown-header-center li{
+margin: 13px 0px;
+}
+
+ .dropdown-header-center li:hover {
+    background: #aad6be;
+    color: #213a7f;
+    cursor: pointer;
+}
+.logo-hamburger-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem;
+}
+#hamburger-butt .bar {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 9px 0; 
+  }
+
+.drpd-titles.small-screen{
+    text-align: right;
+    max-height:0px; ;
+ 
+    transition: max-height 1s linear;
+    overflow: hidden;
+
+ }
+ #dropdowns-menu-id-small-screen.transition-height{
+     max-height:2000px; ;
+     overflow: initial; /* for dropdowns to overflow container */
+      
+ }
+
+ .drpd-titles.big-screen{
+     display: none;
+ }
+#dropdowns-menu-id-small-screen{
+    /* background-color: white; */
+}
+.soldier-calling{
+    display: none;
+}
+   @media(min-width:1030px){
+      .logo-hamburger-container{
+        margin: initial;
+
+       }
+    .center-header{
+        position: sticky;
+        top:  0px;
+        left:0;
+        display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+    }
+ .drpd-titles.big-screen{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .drpd-titles.small-screen{
+         display: none;
+     }
+    
+   
+    .center-header #hamburger-butt{
+        display: none;
+    }
+
+    .center-header { 
+         
+        justify-content: center;
+
+    }
+    .soldier-calling{
+        display: block;
+        /* float: left; */
+        /* border: olive solid 6px; */
+   
+        margin-left: -5px;
+        padding-top: 7px;
+      
+        overflow: unset;
+        font-weight: 700;
+        width: 86px;
+        height: 55px;
+        background: url(https://www.hackeru.co.il/assets/site/images/soldier.png) no-repeat;
+         /* makes background image to overflow */
+         padding-bottom: 50px;
+         margin-bottom: -50px;
+        /* margin-top: -57px; */
+        position: relative;
+        /* top: px; */
+        left: -20px;
+
+        z-index: 3;
+        color: #eee;
+        font-size: 14.5px;
+        text-align: center;
+       
+   
+    }
+}

@@ -1,0 +1,97 @@
+/* mobile & common*/
+:root{
+    --sticky-headerHeighet:-90px;
+    --upper-headerHeighet:50px;
+
+}
+
+.app-NonGrid-container{
+border: blueviolet  solid 8px;
+min-height: 1000px;
+}
+.app-container{
+    
+    display: grid;
+    grid-template-columns: 100%; 
+    grid-template-rows: [row-1-start] 1fr  [row-1-end  row-2-start] 4fr auto auto;
+grid-template-areas: 
+ "  gardientRow "
+  "courses-icon"
+"info-links-small-screen"
+"fith-line"
+"sixth-line"
+
+;
+}
+
+.gardientRow, .lower-header{
+    grid-area:  gardientRow  ;
+    background: var( --backgroundColors-Hackeru);
+
+}   
+.hackeru-info-links-container.small-screen{
+    grid-area: info-links-small-screen ;
+ }
+ .fith-line, .Hacker-u-advantages-container{
+    grid-area: fith-line ;
+    background: url(https://www.hackeru.co.il/assets/site/images/bg_4.png) repeat  ;
+     
+} 
+.sixth-line-background, .sixth-line-container {
+    grid-area: sixth-line ;
+    background:#fff;
+}
+.newsticker-container{
+    display: none;
+}
+@media(min-width:1030px){
+    .app-container{
+        display: grid;
+        grid-template-columns: minmax(0 , 1fr) [col-middle]  1030px  minmax(0 ,1fr) ;
+
+        grid-template-rows: [row-1-start] 1fr [row-1-end row-2-start] 5fr [row-2-end row-3-start]   auto auto auto;
+        
+    grid-template-areas: 
+ 
+    "gardientRow  gardientRow gardientRow"  
+    ". fourthLine ."
+    "fith-line fith-line fith-line"
+    "sixth-line sixth-line sixth-line"
+"newsticker newsticker newsticker"
+    ;
+    } 
+    .lower-header{
+        grid-row: row-1-start;
+        grid-column:col-middle;
+
+    } 
+    .fourth-line{
+grid-area: fourthLine;
+    }
+    .hackeru-info-links-container.small-screen{
+        grid-area: none ;
+        display: none;
+     }
+    /* .Hacker-u-advantages-container{
+    grid-area: Hacker-u-advantages ;
+
+} */
+
+.Hacker-u-advantages-container{
+
+    grid-row: 3/4 ;
+grid-column: col-middle;
+}
+
+.sixth-line-container {
+    grid-row:  4/5 ;
+grid-column: col-middle;
+
+ }
+
+ .newsticker-container{  
+     display: initial;
+    grid-area: newsticker;
+ }
+
+}

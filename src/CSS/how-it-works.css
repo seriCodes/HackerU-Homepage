@@ -1,0 +1,25 @@
+
+.How-it-works-container .title{
+    font-size: 44px;    
+    margin:0 0 15px ;
+}
+.How-it-works-container .details  {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.How-it-works-container .details  p{
+margin:  1rem 11rem;
+ text-align: right;
+font-size: 18px;
+line-height: 27px;
+}
+@media(min-width:1030px){
+    .How-it-works-container .details  {
+         flex-direction: row;
+     }
+     .How-it-works-container .details  p{
+        margin:  1rem;        
+     }
+}
+

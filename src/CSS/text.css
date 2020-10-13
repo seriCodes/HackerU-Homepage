@@ -1,0 +1,34 @@
+
+.medium-headline{
+    color: var(--subText-color);
+    /* margin-top: 1rem; */
+}
+.mini-headline{
+    color: var(--subText-color);
+    font-weight: normal;
+}
+.large-headline{
+   margin: 0.5rem 0rem;
+   font-size: 1.5rem;
+}
+.hedlines-container{
+    margin: 1rem 0rem;
+}
+.theSmallPrint{
+    font-size: 10px;
+}
+*{
+    font-family: almoni-dl,sans-serif;
+}
+.header-wrapper a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* a{
+    margin: 0px 5px;
+} */
+
+/* .align-base{
+    vertical-align: baseline;
+
+} */

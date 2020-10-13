@@ -1,0 +1,94 @@
+.not-visible{
+    visibility: hidden;
+}
+.header-wrapper{
+    /* position: relative; */
+    color: var(--fontColor-Background);
+}
+
+ 
+.upper-header{
+    /* margin-top: -10px; */
+    font-size: 12px;
+    font-weight: bolder;
+    background-color: var(--backgroundBlue-color);
+}
+.upper-header a{
+ margin: 10px 0;;
+}
+.upper-header .formContainer{
+    display:none 
+}
+
+#upper-header{
+    justify-content: center;
+}
+.upper-header  ul {
+    list-style: none; 
+    padding-inline-start: 0rem;
+}
+.upper-header  ul li:nth-child(n+4){
+    display: none;  
+}
+.upper-header  ul li:not(:nth-last-child(3))::after {
+    content: "|";
+} 
+@media(min-width:1030px){
+     .upper-header .formContainer{
+            display:initial;
+            background-color: #122046;
+            padding: 10px 0;
+         }
+        .formContainer form{
+            display:flex;
+             /* justify-content: space-around; */
+             /* align-items: center; */
+
+        }
+        #upper-header{
+            justify-content: space-around;
+        }
+        .upper-header  ul li{
+padding-left: 4px;        
+}
+    .upper-header input{
+        /* display:inline ; */
+        /* display:initial ; */
+    /* color: red; */
+    border:none;
+    padding-right: 8px;
+    color: inherit;
+    outline: none;
+    background-color: inherit;
+
+    }
+    .upper-header ::placeholder{
+        color: grey;
+        font-size: 12px;
+        font-weight: bolder;
+    }
+    .upper-header button{
+        background-color: inherit;
+        /* outline: 0; */
+         border: none;
+         /* padding-top: 3px; */
+    }
+    .upper-header  ul li:nth-child(n+4){
+        display: initial;  
+    }
+  
+
+    .upper-header  ul li:not(:nth-last-child(1))::after {
+        content: "|";
+    }
+  
+      .wl {
+         width: 1px;
+        /* float: right; */
+        background: #fff;
+        height: 17.5px;
+        /* border-right: white; */
+        margin-top: 6.5px;
+        /* z-index: 1111111; */
+    }
+}

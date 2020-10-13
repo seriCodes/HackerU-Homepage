@@ -1,0 +1,23 @@
+.make-appointment-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    
+
+
+font-size: 30px;
+}
+.button-make-appointment-container{
+    width: 296px;
+    height: auto;
+    background: var( --stage4-color);
+    padding: 6px;
+
+}
+
+.button-make-appointment{
+    /* margin: -30px;
+    padding: 20px; */
+    color: var(--fontColor-Background);
+    border: 3px solid #aad6be;
+ }

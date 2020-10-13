@@ -1,0 +1,48 @@
+.fourth-line{
+    display: grid;
+    grid-template-columns:  1fr;
+    border: blue solid 6px;
+    grid-template-areas: 
+    "courses-icon  "
+    ;
+}
+.fourth-line .user-details-first-container{
+    display:none;
+}
+.CoursesIconsLinks{
+    grid-area: courses-icon ;
+}
+.hackeru-info-links-container.big-screen{
+    grid-area: none ;
+    display: none;
+
+}
+@media(min-width:1030px){
+
+    .fourth-line{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: auto 1fr;
+
+        border: red solid 6px;
+        grid-template-areas: 
+        "courses-icon user-details"
+        "HackerUinfoLinks HackerUinfoLinks"
+        ;
+    }
+    .fourth-line .user-details-first-container{
+        display:block;
+    }
+    .CoursesIconsLinks{
+        grid-area: courses-icon ;
+    }
+    .user-details-container{
+        grid-area: user-details ;
+    }
+    .hackeru-info-links-container.big-screen{
+        grid-area: HackerUinfoLinks ;
+        display: flex;
+        z-index: 1;
+
+    }
+}

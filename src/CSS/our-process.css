@@ -1,0 +1,110 @@
+:root{
+    --stage1-color:rgb(5, 152, 168) ;
+    --stage2-color:rgb(57, 164, 220) ;
+    --stage3-color: rgb(21, 75, 156);
+    --stage4-color:    rgb(53, 47, 138);
+
+}
+.process-stages-container{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    /* align-items: space-between; */
+}
+.our-process-container h4{
+    font-size: 30px;
+    margin-bottom: 11px;
+    text-align: right;
+}
+.stage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--fontColor-Background) ;
+    width:200px;
+    height: 310px;
+    padding: 1rem;
+    position: relative;
+}
+.stage img{
+/* align-self: flex-start; */
+position: absolute;
+top: 43px;
+right: 0px;
+
+}
+
+.bounceInRight-setting{
+ }
+.stage1{
+background: var(--stage1-color);
+}
+.stage1 .circle-process{
+    color:var(--stage1-color);
+}
+.stage2{
+    background:var(  --stage2-color) ;
+    }
+    .stage2 .circle-process{
+        color:var(--stage2-color);
+    }
+    
+    .stage3{
+        background: var(    --stage3-color) ;
+
+    }
+    .stage3 .circle-process{
+        color:var(    --stage3-color) ;
+    }
+    .stage4{
+        background: var( --stage4-color)
+        
+    }
+    .stage4 .circle-process{
+        color:var(  --stage4-color) ;
+    }
+
+
+    .circle-process{
+        height:  50px;
+        width:  50px;
+        background-color:var(--circles-backgrounds);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 32px;
+      }
+
+     .stage .line{
+        height: 1px;
+        width: 197px;
+        background: #fff;
+        margin: 0 auto;
+      }
+
+      .bounceInRight-setting-1{
+          transition: transform 0.1s linear;
+
+          transform: translateX(100vw);
+      }
+      .bounceInRight-setting-2{
+        transition: transform 0.3s linear;
+
+        transform: translateX(100vw);
+     }
+     .bounceInRight-setting-3{
+        transition: transform 0.5s linear;
+
+        transform: translateX(100vw);
+     }
+     .bounceInRight-setting-4{
+ transition: transform 0.9s linear;
+
+        transform: translateX(100vw);
+     }
+
+      .process-step-animation-reset{
+        transform: none;
+
+      }

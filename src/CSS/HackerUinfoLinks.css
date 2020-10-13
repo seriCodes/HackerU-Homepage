@@ -1,0 +1,85 @@
+.hackeru-info-links-container{
+    /* border: pink solid 4px; */
+    /* margin: auto; */
+    margin: 2rem 0px;
+    font-size: 1.5vw;
+    text-align: right;
+display: flex;
+flex-direction: column;
+/* padding: 10px 10px; */
+
+
+/* width: 100%; */
+/* height: 145px; */
+/* float: right; */
+/* margin-top: -60px; */
+-moz-box-shadow: 0px 3px 6px #00000029;
+box-shadow: 0px 3px 6px #00000029;
+      /* font-family: Arial,sans-serif; */
+
+}
+.hackeru-info-links-container .hackeru-info-subject-container:nth-child(1){
+
+    background: transparent linear-gradient(252deg, #FFFFFF 0%, #F5F7FF 100%) 0% 0% no-repeat padding-box;
+}
+.hackeru-info-links-container .hackeru-info-subject-container:nth-child(2){
+
+    background: white
+}
+
+.hackeru-info-subject-container{
+    display: flex;
+    padding: 10px 10px;
+align-items: center;
+}
+.hackeru-info-title{
+    
+/* padding-top: 0.5em; */
+/* margin: 1rem; */
+ font-size: 20px;
+font-weight: bolder;
+/* font-family:sans-serif; */
+
+}
+.hackeru-info-title-link-container{
+    margin: 1rem;
+    text-align: right;
+}
+.hackeru-info{
+
+    line-height: 1;
+    color: #373737;
+    margin-right: 0;
+    margin-top:0.5em;
+    font-size: 13.8px;
+    width: 288px;
+    margin-bottom: 0.2em;
+    padding: 0
+}
+
+
+.icon-info {
+    /* font-size: 19px; */
+    width: 140px;
+    height: 100%;
+     background: transparent;
+    /* color: #fff; */
+     display: flex;
+    align-items: center;
+
+}
+.hackeru-info-links-container{
+    margin: 0rem;
+
+}
+@media(min-width:1030px){
+    .hackeru-info-links-container{
+        flex-direction: row;
+ 
+        margin: 2rem;
+
+        margin-bottom: -82.5px;
+        font-size: 1rem;
+
+    }
+}

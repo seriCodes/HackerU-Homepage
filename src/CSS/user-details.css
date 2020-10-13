@@ -1,0 +1,125 @@
+.empty-space-user-details{
+    height: var(--iconsTitle-heighet);
+
+
+}
+.user-details-container{
+    color: white;
+padding: 10px 10px;
+
+}
+.user-details-headline{
+    font-size: 1.5rem;
+    padding-top: 15px;
+}
+.user-details-headline.big-screen{
+    display: none;
+}
+
+.user-details-headline.small-screen{
+    display: block;
+}
+
+.contact-information .input {
+    /* position: relative!important; */
+    margin-bottom: 22px;
+    margin-left: 0;
+    width: 80%;
+    height: 30px;
+    padding: 8px;
+    padding-top: 15px;
+    color: #373737;
+    background: #fff;
+    /* display: inline-block; */
+    text-align: right;
+
+}
+.contact-information .input label{
+    /* margin-left: 5px;
+color: gold; */
+
+display:inline-block ; 
+ /* width: 30%; */
+text-align: right;
+}
+
+.contact-information .input input{
+    border: none;
+    outline:none
+}
+
+#contact-from-general .check {
+    text-align: right;
+    display: flex;
+    align-items: flex-start;
+}
+#contact-from-general .check input{
+margin-left: 10px;
+/* border: none; */
+outline: none;
+ }
+
+ #contact-from-general .privacy-policy{
+     align-self: center;
+     margin : 15px  0px;
+ }
+#contact-from-general .privacy-policy a{
+    color: white;
+    text-decoration: none;
+ }
+
+ #contact-from-general  button{
+     /* border: none; */
+    box-sizing: content-box;
+    align-self: flex-start;
+    /* align-self: center; */
+    border-color: #00B8D4;
+    color: black !important;
+    font-weight: 600;
+    padding-top: 4px;
+    width: 80%;
+    padding: 2px;
+    background: #18FFFF;
+    padding: 2px 8px 6px 8px;
+ }
+#contact-from-general .button .bt_in {
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid #aad6be; */
+    font-size: 24pt;
+    color: #213a7f;
+    display: inline-block;
+    padding-top:4px;
+ }
+/*      */
+@media(min-width:1030px){
+
+    .user-details-headline.big-screen{
+        display: block;
+    }
+
+
+    .user-details-headline.small-screen{
+        display: none;
+    }
+.user-details-container{
+    background: var( --backgroundColors-Hackeru);
+ }
+
+ .user-details-headline   {
+     text-align: right;
+    font-size: 26px;
+    font-weight: 700;
+    padding-right: 18px;
+ }
+ #contact-from-general{
+    width: 260px;
+    margin-right: 20px;
+    margin-top: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-start;
+ }
+
+}

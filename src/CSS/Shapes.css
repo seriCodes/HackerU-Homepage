@@ -1,0 +1,20 @@
+:root{
+    --circles-backgrounds:  rgb(255, 255, 255);
+}
+.shape{
+    overflow: hidden;
+    /* overflow: visible;
+    overflow: scroll; */
+
+}
+.circle-modal{
+    height: 450px;
+    width: 450px;
+    background-color:var(--circles-backgrounds);
+    border-radius: 50%;
+  }
+  .circle-study-process{
+
+    background-color:var(--circles-backgrounds);
+
+  }
