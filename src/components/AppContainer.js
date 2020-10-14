@@ -1,5 +1,5 @@
 import React , {useState,useEffect} from 'react';
-import {makeElementsAnimationOnScroll,makeModalVisibleAfterScroll} from '../functions/scrollFunctions';  
+import {makeElementsAnimationOnScroll,makeModalVisibleAfterScroll, toggleElementsInViewPort} from '../functions/scrollFunctions';  
 import UpperHeader from './UpperHeader';  
 import LowerHeader from './LowerHeader';  
  import {FourthLine} from "./FourthLine";
@@ -41,6 +41,7 @@ function AppContainer(props) {
 
         
         makeElementsAnimationOnScroll(elementsToShow)
+        toggleElementsInViewPort(elementsToShow)
 let counter=1
 
 let body = document.querySelector("body")

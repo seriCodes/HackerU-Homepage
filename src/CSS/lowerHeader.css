@@ -1,9 +1,19 @@
 .lower-header{
-    font-size: 2.5vw;
+    font-size: 4vw;
 }
 .lower-header span{
-    font-size: 3.5vw;
+    font-size: 5vw;
 }
+@media(min-width:800px){
+    .lower-header{
+        font-size: 2.5vw;
+    }
+    .lower-header span{
+        font-size: 3.5vw;
+    }
+}
+
+
 @media(min-width:1030px){
     .lower-header{
         font-size: 32px;

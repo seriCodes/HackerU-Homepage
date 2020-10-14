@@ -41,7 +41,7 @@ export function makeElementsAnimationOnScroll( animatedElements){
     
 }
 
-function toggleElementsInViewPort( elementsToShow){
+export function toggleElementsInViewPort( elementsToShow){
     console.log("elementsToShow animation-class toggleElementsInViewPort", elementsToShow[0].getAttribute("animation-class"))
     console.log("elementsToShow", elementsToShow)
 

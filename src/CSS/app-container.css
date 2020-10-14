@@ -13,7 +13,7 @@ min-height: 1000px;
     
     display: grid;
     grid-template-columns: 100%; 
-    grid-template-rows: [row-1-start] 1fr  [row-1-end  row-2-start] 4fr auto auto;
+    grid-template-rows: [row-1-start] 0.25fr  [row-1-end  row-2-start] 4fr auto auto auto;
 grid-template-areas: 
  "  gardientRow "
   "courses-icon"
